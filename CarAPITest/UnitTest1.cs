@@ -14,7 +14,7 @@ namespace CarAPITest
 {
 	public class UnitTest1
 	{
-		[Fact(DisplayName = "Index visar en bil")]
+		[Fact(DisplayName = "Skapa ett företag och ett fordon")]
 		public void Test1()
 		{
 			// In-memory database only exists while the connection is open
@@ -33,10 +33,12 @@ namespace CarAPITest
 				}
 				using (var context = new CarApiContext(options))
 				{
-					var bankId = Guid.NewGuid();
-					var transactionId = Guid.NewGuid();
-					var Car = new Car() { Id = bankId, VIN = "xxx", RegNr = "ABC123"};
-					context.Cars.Add(Car);
+					var companyId = Guid.NewGuid();
+					var company = new Company { Id = companyId };
+					context.Companies.Add(company);
+
+					var car = new Car() { Id = Guid.NewGuid(), CompanyId = company.Id, VIN = "xxx", RegNr = "ABC123" };
+					context.Cars.Add(car);
 
 					context.SaveChanges();
 				}

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
-using CarAPI.Data;
 using CarAPI.Models;
 
 namespace CarAPI.DAL
@@ -33,11 +32,11 @@ namespace CarAPI.DAL
 		    }
 	    }
 
-	    public void AddCar(Car Car)
+	    public void AddCar(Car car)
 	    {
 		    using (var context = new CarApiContext(_optionsBuilder.Options))
 		    {
-			    context.Cars.Add(Car);
+			    context.Cars.Add(car);
 			    context.SaveChanges();
 		    }
 	    }
@@ -52,11 +51,11 @@ namespace CarAPI.DAL
 		    }
 	    }
 
-	    public void UpdateCar(Car Car)
+	    public void UpdateCar(Car car)
 	    {
 		    using (var context = new CarApiContext(_optionsBuilder.Options))
 		    {
-			    context.Cars.Update(Car);
+			    context.Cars.Update(car);
 			    context.SaveChanges();
 		    }
 	    }
@@ -77,11 +76,11 @@ namespace CarAPI.DAL
             }
         }
 
-        public void AddCompany(Company Company)
+        public void AddCompany(Company company)
         {
             using (var context = new CarApiContext(_optionsBuilder.Options))
             {
-                context.Companies.Add(Company);
+                context.Companies.Add(company);
                 context.SaveChanges();
             }
         }
@@ -90,17 +89,17 @@ namespace CarAPI.DAL
         {
             using (var context = new CarApiContext(_optionsBuilder.Options))
             {
-                var Company = GetCompany(id);
-                context.Companies.Remove(Company);
+                var company = GetCompany(id);
+                context.Companies.Remove(company);
                 context.SaveChanges();
             }
         }
 
-        public void UpdateCompany(Company Company)
+        public void UpdateCompany(Company company)
         {
             using (var context = new CarApiContext(_optionsBuilder.Options))
             {
-                context.Companies.Update(Company);
+                context.Companies.Update(company);
                 context.SaveChanges();
             }
         }

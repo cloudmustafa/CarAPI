@@ -15,12 +15,9 @@ namespace CarAPI.Models
 		}
 		public Guid Id { get; set; }
 
-		[Display(Name = "Skapat datum")]
 		public string CreationTime { get; set; }
-		[Display(Name = "Namn")]
 		public string Name { get; set; }
 
-		[Display(Name = "Adress")]
 		public string Address { get; set; }
 
 		public ICollection<Car> Cars { get; set; }
