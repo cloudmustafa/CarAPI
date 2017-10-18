@@ -70,8 +70,15 @@ namespace CarAPI.DAL
 					VIN = "YS2R4X20005387055",
 					RegNr = "STU901"
 				});
-				context.SaveChanges();
 			}
-		}
+            else
+            {
+                foreach (var car in context.Cars)
+                {
+                    car.Disabled = false;
+                }
+            }
+            context.SaveChanges();
+        }
 	}
 }
