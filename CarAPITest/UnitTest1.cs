@@ -1,11 +1,8 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
-using Moq;
 using CarAPI.Controllers;
-using CarAPI.Data;
 using CarAPI.DAL;
 using CarAPI.Models;
 using Xunit;
