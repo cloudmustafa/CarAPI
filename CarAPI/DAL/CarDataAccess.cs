@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
-using CarAPI.Models;
+using CarApi.Models;
 
-namespace CarAPI.DAL
+namespace CarApi.DAL
 {
-    public class DataAccess
+    public class CarDataAccess
     {
         private readonly DbContextOptionsBuilder<CarApiContext> _optionsBuilder =
             new DbContextOptionsBuilder<CarApiContext>();
 
-        public DataAccess()
+        public CarDataAccess()
         {
             _optionsBuilder.UseSqlite("DataSource=App_Data/Car.db");
         }

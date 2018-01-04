@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CarAPI.Controllers
+namespace CarApi.Controllers
 {
     [Route("api/[controller]")]
     public class ValuesController : Controller
@@ -11,7 +11,7 @@ namespace CarAPI.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new[] {"CarAPI started"};
+            return new[] {"CarApi started"};
         }
 
         // GET api/values/5

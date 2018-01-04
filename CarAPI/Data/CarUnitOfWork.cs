@@ -4,15 +4,15 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using CarApi.Data;
-using CarAPI.DAL;
+using CarApi.DAL;
 
-namespace CarAPI.Data
+namespace CarApi.Data
 {
-    public class UnitOfWork:IUnitOfWork
+    public class CarUnitOfWork:ICarUnitOfWork
     {
 	    private readonly CarApiContext _context;
 
-	    public UnitOfWork(CarApiContext context)
+	    public CarUnitOfWork(CarApiContext context)
 	    {
 		    _context = context;
 		    Cars = new CarRepository(_context);

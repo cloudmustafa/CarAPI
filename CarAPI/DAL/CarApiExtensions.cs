@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
-using System.Threading.Tasks;
-using CarAPI.Models;
+using CarApi.Models;
 
-namespace CarAPI.DAL
+namespace CarApi.DAL
 {
 	public static class CarApiExtensions
 	{

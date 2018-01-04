@@ -11,13 +11,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CarApi.Data
 {
-	public class CompanyRepository : Repository<Company>, ICompanyRepository
+	public class RoleRepository : Repository<Role>, IRoleRepository
 	{
-		public CompanyRepository(CarApiContext context) : base(context)
+		public RoleRepository(AspNetContext context) : base(context)
 		{
 		}
 
-		public CarApiContext CarApiContext => Context as CarApiContext;
+		public AspNetContext AspNetContext => Context as AspNetContext;
 
 	}
 }

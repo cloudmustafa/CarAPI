@@ -1,20 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using CarAPI.Data;
-using CarAPI.DAL;
-using CarAPI.Models;
+using CarApi.Data;
+using CarApi.DAL;
+using CarApi.Models;
 using Microsoft.AspNetCore.Cors;
 
-namespace CarAPI.Controllers
+namespace CarApi.Controllers
 {
     [Route("api/[controller]")]
     public class CarController : Controller
     {
-	    private readonly UnitOfWork _unitOfWork;
+	    private readonly CarUnitOfWork _unitOfWork;
 		public CarController(CarApiContext context)
 	    {
-			_unitOfWork = new UnitOfWork(context);
+			_unitOfWork = new CarUnitOfWork(context);
 		}
         // GET api/Car
         [HttpGet]

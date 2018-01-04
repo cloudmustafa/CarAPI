@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using CarAPI.Data;
-using CarAPI.DAL;
-using CarAPI.Models;
+using CarApi.Data;
+using CarApi.DAL;
+using CarApi.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CarApi.Controllers
@@ -10,10 +10,10 @@ namespace CarApi.Controllers
     [Route("api/[controller]")]
     public class CompanyController : Controller
     {
-	    private readonly UnitOfWork _unitOfWork;
+	    private readonly CarUnitOfWork _unitOfWork;
 		public CompanyController(CarApiContext context)
 	    {
-			_unitOfWork = new UnitOfWork(context);
+			_unitOfWork = new CarUnitOfWork(context);
 		}
         // GET api/Company
         [HttpGet]

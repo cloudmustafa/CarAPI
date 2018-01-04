@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CarAPI.Data
+namespace CarApi.Data
 {
-    interface IUnitOfWork: IDisposable
+    interface IUserUnitOfWork: IDisposable
     {
-	    ICarRepository Cars { get; }
+	    IUserRepository Users { get; }
 		int Complete();
     }
 }

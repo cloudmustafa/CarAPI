@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Swashbuckle.AspNetCore.Swagger;
-using CarAPI.DAL;
+using CarApi.DAL;
 
-namespace CarAPI
+namespace CarApi
 {
 	public class Startup
 	{
@@ -28,7 +28,7 @@ namespace CarAPI
 			// Register the Swagger generator, defining one or more Swagger documents
 			services.AddSwaggerGen(c =>
 			{
-				c.SwaggerDoc("v1", new Info { Title = "CarAPI", Version = "v1" });
+				c.SwaggerDoc("v1", new Info { Title = "CarApi", Version = "v1" });
 			});
 			services.AddCors(options =>
 			{
@@ -54,7 +54,7 @@ namespace CarAPI
 			// Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), specifying the Swagger JSON endpoint.
 			app.UseSwaggerUI(c =>
 			{
-				c.SwaggerEndpoint("/swagger/v1/swagger.json", "CarAPI V1");
+				c.SwaggerEndpoint("/swagger/v1/swagger.json", "CarApi V1");
 			});
 
 			app.UseMvc();
@@ -66,12 +66,12 @@ namespace CarAPI
 				//var connection = new SqliteConnection("DataSource =:memory:");
 				//connection.Open();
 
-				//var options = new DbContextOptionsBuilder<CarApiContext>()
+				//var options = new DbContextOptionsBuilder<AspNetContext>()
 				//	.UseSqlite(connection)
 				//    .Options;
 
 				//// Create the schema in the database
-				//using (var context = new CarApiContext(options))
+				//using (var context = new AspNetContext(options))
 				//{
 				//	context.Database.EnsureCreated();
 				//	context.EnsureSeedData();

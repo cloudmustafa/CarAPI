@@ -9,13 +9,13 @@ using CarApi.Models;
 
 namespace CarApi.Data
 {
-	public class CarRepository : Repository<Car>, ICarRepository
+	public class UserRepository : Repository<User>, IUserRepository
 	{
-		public CarRepository(CarApiContext context) : base(context)
+		public UserRepository(AspNetContext context) : base(context)
 		{
 		}
 
-		public CarApiContext CarApiContext => Context as CarApiContext;
+		public AspNetContext AspNetContext => Context as AspNetContext;
 
 	}
 }
