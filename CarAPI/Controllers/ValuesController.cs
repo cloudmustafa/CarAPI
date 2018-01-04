@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CarApi.Controllers
+namespace CarAPI.Controllers
 {
     [Route("api/[controller]")]
     public class ValuesController : Controller

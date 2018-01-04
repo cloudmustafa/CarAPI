@@ -1,6 +1,6 @@
-﻿using CarApi.DAL;
+﻿using CarAPI.DAL;
 
-namespace CarApi.Data
+namespace CarAPI.Data
 {
     public class UserUnitOfWork:IUserUnitOfWork
     {

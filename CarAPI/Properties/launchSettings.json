@@ -16,7 +16,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "CarApi": {
+    "CarAPI": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "api/values",

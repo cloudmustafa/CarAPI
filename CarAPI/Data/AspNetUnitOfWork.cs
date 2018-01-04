@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
-using CarApi.Data;
-using CarApi.DAL;
+using CarAPI.Data;
+using CarAPI.DAL;
 
 namespace CarAPI.Data
 {

@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using CarApi.Models;
+using CarAPI.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace CarApi.DAL
+namespace CarAPI.DAL
 {
     public class AspNetDataAccess
     {

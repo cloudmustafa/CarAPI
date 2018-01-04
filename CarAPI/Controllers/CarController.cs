@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using CarApi.Data;
-using CarApi.DAL;
-using CarApi.Models;
+using CarAPI.Data;
+using CarAPI.DAL;
+using CarAPI.Models;
 using Microsoft.AspNetCore.Cors;
 
-namespace CarApi.Controllers
+namespace CarAPI.Controllers
 {
     [Route("api/[controller]")]
     public class CarController : Controller

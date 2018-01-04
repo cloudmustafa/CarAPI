@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using CarApi.Data;
-using CarApi.DAL;
-using CarApi.Models;
+using CarAPI.Data;
+using CarAPI.DAL;
+using CarAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Cors;
 

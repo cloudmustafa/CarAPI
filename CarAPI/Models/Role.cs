@@ -5,7 +5,7 @@ using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CarApi.Models
+namespace CarAPI.Models
 {
 	public class Role
 	{

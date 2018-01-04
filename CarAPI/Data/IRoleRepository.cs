@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using CarApi.Models;
+using CarAPI.Models;
 
-namespace CarApi.Data
+namespace CarAPI.Data
 {
     public interface IRoleRepository:IRepository<Role>
     {

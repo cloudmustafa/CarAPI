@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Linq;
-using CarApi.Models;
+using CarAPI.Models;
 
-namespace CarApi.DAL
+namespace CarAPI.DAL
 {
 	public static class CarApiExtensions
 	{

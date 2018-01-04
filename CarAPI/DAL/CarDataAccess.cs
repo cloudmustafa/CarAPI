@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
-using CarApi.Models;
+using CarAPI.Models;
 
-namespace CarApi.DAL
+namespace CarAPI.DAL
 {
     public class CarDataAccess
     {

@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using CarApi.Data;
-using CarApi.DAL;
-using CarApi.Models;
+using CarAPI.Data;
+using CarAPI.DAL;
+using CarAPI.Models;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace CarApi.Data
+namespace CarAPI.Data
 {
 	public class RoleRepository : Repository<Role>, IRoleRepository
 	{

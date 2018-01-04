@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using CarApi.Models;
+using CarAPI.Models;
 
-namespace CarApi.DAL
+namespace CarAPI.DAL
 {
 	public class AspNetContext : DbContext
 	{
