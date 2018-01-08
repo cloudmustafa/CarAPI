@@ -89,6 +89,12 @@ namespace CarAPI.DAL
         {
             using (var context = new CarApiContext(_optionsBuilder.Options))
             {
+                var cars = GetCars().Where(c => c.CompanyId == id);
+                foreach (var car in cars)
+                {
+                    context.Cars.Remove(car);
+                }
+
                 var company = GetCompany(id);
                 context.Companies.Remove(company);
                 context.SaveChanges();
