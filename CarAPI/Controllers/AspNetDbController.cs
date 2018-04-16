@@ -2,6 +2,7 @@
 using System.IO;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Cors;
+using CarAPI.Utils;
 
 namespace CarAPI.Controllers
 {
@@ -13,7 +14,8 @@ namespace CarAPI.Controllers
 		[EnableCors("AllowAllOrigins")]
 		public string GetAspNetDb()
 		{
-			return Directory.GetCurrentDirectory() + "\\App_Data\\AspNet.db";
+            //return Directory.GetCurrentDirectory() + "\\App_Data\\AspNet.db";
+            return Helpers.GetAspNetDbConnection();
 		}
 	}
 }
